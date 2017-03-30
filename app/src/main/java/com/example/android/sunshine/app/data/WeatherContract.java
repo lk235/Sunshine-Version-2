@@ -17,6 +17,7 @@ package com.example.android.sunshine.app.data;
 
 import android.provider.BaseColumns;
 import android.text.format.Time;
+import android.text.style.StrikethroughSpan;
 
 /**
  * Defines table and column names for the weather database.
@@ -40,6 +41,14 @@ public class WeatherContract {
      */
     public static final class LocationEntry implements BaseColumns {
         public static final String TABLE_NAME = "location";
+
+        public static final String COLUMN_CITY_NAME = "city_name";
+
+        public static final String COLUMN_LOCATION_SETTING = "location_setting";
+
+        //latitude and Longitude  for the city (stored as floats)
+        public static final String COLUMN_COORD_LAT = "coord_lat";
+        public static final String COLUMN_COORD_LONG = "coord_long";
 
     }
 
